@@ -1,16 +1,6 @@
-//Pink Freud's CFG - EDITE PELO MENOS O FIM DA CFG COM SUAS PREFERENCIAS. voce deveria ler a CFG antes de executar ela: tudo o que tem nela e pensado, mas talvez haja algo que voce nao goste. NAO DIGA QUE NAO AVISEI
+echo "executando cfg..."
 
-
-// geralmente este arquivo deve estar em C:\Program Files (x86)\Steam\SteamApps\common\Counter-Strike Global Offensive\csgo\cfg
-
-echo "executando..."
-
-// parece que algumas pessoas tem problemas por causa do comando abaixo:
 cl_forcepreload 					"1"           	//melhora a estabilidade forcando o jogo a carregar tudo na memoria durant eo loading, mas aumenta o tempo de loading. forca o jogo a carregar varias coisas na memoria, audio e talvez texturas. antes do jogo comecar
-
-// o comando abaixo promete resovler o problema que alguns tem de que quando entram no jogo os parametros de video voltam ao padrao
-//mat_savechanges //guarda no registro a sua cfg de video
-
 m_rawinput 							"1"				// faz com  que para o jogo a sensibilidade do windows estivesse em 6/11					
 voice_enable						"1"  			// 1 ativa voz no jogo. 0 desativa
 voice_scale         				"0.3" 			// entre 0 e 1. e o volume do microfone dos outros jogadores
@@ -19,7 +9,7 @@ snd_menumusic_volume 				"0"				// desligado
 snd_roundstart_volume 				"0"				// desligado
 snd_roundend_volume 				"0"				// desligado
 snd_mapobjective_volume 			"0"				// desligado
-snd_tensecondwarning_volume 			"0.07" 			// LIGADO baixinho apenas para usar o volume de 10 segundos para fim do round/c4 explodir! 0.5 e volume pela metade. 1 volume max
+snd_tensecondwarning_volume 		"0.07" 			// LIGADO baixinho apenas para usar o volume de 10 segundos para fim do round/c4 explodir! 0.5 e volume pela metade. 1 volume max
 snd_deathcamera_volume 				"0"				// desligado
 windows_speaker_config 				"-1" 			// -1=Automatico 1=Headset 4=Stere 3=4Speakers 6=5.1 Surround
 snd_mute_losefocus 					"0"				// o jogo nao fica mutado quando esta minimizado (alt tab) 
@@ -35,7 +25,7 @@ safezonex							"0.2"			// centraliza a HUD no eixo X. O mais central possivel, 
 safezoney							"0.85"			// centraliza no eixo Y
 cl_showloadout 						"1" 			// mostra sempre o inventario, como por exemplo qtas granadas. 0 desaparece depois de um tempo
 //mat_monitorgamma 					"1.9" 			// brilho do monitor.
-cl_righthand 						"1" 			// 1 para arma na direita, 0 para arma na esquerda
+cl_righthand 						"0" 			// 1 para arma na direita, 0 para arma na esquerda
 cl_hud_playercount_showcount		"1"				// 0 = mostra os avatares de quem esta vivo, 1 = mostra apenas quantos estao vivos. 
 cl_hud_playercount_pos				"1"				// posicao do relogio e mostrador de quem esta vivo: 0 em cima, 1 em baixo 
 cl_hud_bomb_under_radar				"0" 			// posicao do indicador de C4: 1 = abaixo do radar (padrao), 0 no inventario, canto inferior direito.
@@ -57,12 +47,11 @@ cl_cmdrate 							"128"			// nao altere este valor. configuracao da rede.
 cl_updaterate 						"128"			// nao altere este valor. configuracao da rede.
 cl_interp 							"0"				// quanto menos interpocao, mais o jogo no seu cliente se parece com o servidor. pode causar gente lagada a ficar "teleportando" deixo em 0 para que o servidor que determine esse valor pra mim
 
-clear	//	apaga no console o texto que estava la. apenas para melhorar a apresentacao do texto abaixo
-clear	//	apaga no console o texto que estava la. apenas para melhorar a apresentacao do texto abaixo
+clear								//	apaga no console o texto que estava la. apenas para melhorar a apresentacao do texto abaixo
+clear								//	apaga no console o texto que estava la. apenas para melhorar a apresentacao do texto abaixo
 
-bind "l"							"say aprenda sobre o CS:GO em www.youtube.com/user/PinkFreudBrasil"
+bind "l"							"                                                          Eidi noob"
 bind "capslock"						"+voicerecord" //usa o caps lock para falar no jogo.
-bind "mouse4"						"+voicerecord" //usa o botao lateral do mouse para falar no jogo
 bind "SPACE"        				"+jump"
 bind "MWHEELDOWN"   				"+jump" //binda o scroll do mouse para baixo para o pulo
 bind "g"							"drop"
@@ -81,87 +70,24 @@ bind "mouse1" 						"+attack"
 bind "mouse2" 						"+attack2"
 unbind "i"							// faco nada com o i
 
-echo 'bind "l"			"                                                          Eidi noob"'
-echo 'bind "capslock"		"+voicerecord"'
-echo 'bind "mouse4"		"+voicerecord"'
-echo 'bind "SPACE"        	"+jump"'
-echo 'bind "MWHEELDOWN"   	"+jump"'
-echo 'bind "f"            	"use weapon_flashbang"'
-echo 'bind "4"            	"use weapon_hegrenade"'
-echo 'bind "z"            	"use weapon_incgrenade; use weapon_molotov"'
-echo 'bind "x"            	"use weapon_decoy"'
-echo 'bind "c"            	"use weapon_smokegrenade"'
-echo 'bind "h"            	"radio1"'
-echo 'bind "j"            	"radio2"'
-echo 'bind "k"            	"radio3"'
-echo 'bind ","            	"autobuy"'
-echo 'bind "."            	"rebuy"'
-
-echo "" // esta linha serve para imprimir uma linha vazia no console, apenas para melhorar a apresentacao do texto abaixo
-clear 	// limpa a tela
-clear
-echo "Visite o canal do YouTube com o MELHOR conteudo de CSGO do Brasil!"
-echo "www.youtube.com/user/PinkFreudBrasil"
-echo "......................,..=:,+=++:......................."
-echo ".................:~=++++++++++++++++=..................."
-echo ".............:=+~=+++++++++++++++++++++=:..............."
-echo "...........,++++++++++++++++++++++++++++++=............."
-echo ".........~++++++++++++++++++++++++++++++++++=..........."
-echo ".......:+++++++++++++++++++++++++++++++++++++=.........."
-echo "...,=+++++++++++++++++++++++++++++++++++++++,..........."
-echo "...~+++++++++++++++++++++++++++++++++++++=++...:........"
-echo "..=+++++++++++++++++++++++++++++++++++++++~~....:......."
-echo ".,++++++++++++++++++++++++++++++++++++++++=,....:......."
-echo ",,++++++++++++++++++++++++++++++++++++++++~......:......"
-echo ".:+++++++++++++++++++++++++++++++++++++++~.......=......"
-echo ".,++++++++++++++++++++++++++++++++++++++~.~......:......"
-echo "..=++++++++++++++++++++++++++++++++++++++..............."
-echo "...++++++++++++++++++++++++++++++++++++++:.............."
-echo "...=+++++++++++++++++++++++++++++++++++++.........,....."
-echo "...:++++++++++++++++++++++++++++++++++++++........:....."
-echo "....++++++++++++++++++++++++++++++++++++++,.......:....."
-echo ".....+++++++++++++++++++++++++++++++++++++......=,,+~..."
-echo "......++++++++++++++++++++++++++++++++++++~......:=+++~."
-echo ".....,+++++++++++++++++++++++++++++++++++++=..,++=++::~~"
-echo ".....++++++++++++++++++++++++++++++++++++++=+:=+++=....="
-echo "......=+++++++++++++++++++++++++++++++++++++++++++~++~.="
-echo "........~+++++++++++++++==++++++++++++++++++++++++++++,+"
-echo "...........=+++++++++~....,~===+++++++++++++++:..,,~++~="
-echo "............,++,.,,.......:==+++++++++++++++++=.,,..=+++"
-echo "........:.....++:.......,..I......,+++++++++++++++=.:++,"
-echo ".....==..~I...,+++:.....+,..:?++==+++++++++++++++++=++=="
-echo "......~:......~++++++=..:~+=,~+++++++++++++++++++++++++,"
-echo ".....~:,~+~...+++++++=...:=+++++++++++++++++++++++++++~."
-echo "...,..~==....:++++++++=~..:+++++++++++++++++++++++++++.."
-echo "..~++==:,....,++++++++++++++++++++++++++++++++++++++++.."
-echo "...,+++++....=+++++++++++++++++++++++++++++++++++++++..."
-echo ".....+++=....+++++++++++++++++++++++++++++++++=....+...."
-echo ".....=++,....+++++++++++=++++++++++++++++++++=.....~...."
-echo "......=+=....=++++++++++..=++++++++++++++++++......+...."
-echo ".......+.....,=++++++++++,.:+++++++++++++++,.......~...."
-echo ".......,........=+=,...+++~..=+++++++++++++............."
-echo "....................~++++++=..+++++++++++++,........,..."
-echo ".........~..........,+++++++~..++++++++++++............."
-echo ".........+=.......=:++++++++++,.~++++++++++:........,..."
-echo "........:~=......:+=+++++++++++:.+++++++++=,::.........."
-echo "........,..........:,:=~~.=+++++++++++++++++++~,........"
-echo "..............................++++++++++++++++=........."
-echo "...................,~==+=+=+=.++++++++++,+++++,,........"
-echo "...................:,,+++++++++++++++++=~++++=,........."
-echo "...........:+++++++++++++++++++++++++++.=+++=,.........."
-echo ".......,,,,:+++++++++++++++++++++++++++.+,=:............"
-echo "........=+++++++++++++++++++++++++++++:~................"
-echo ".........:,++++++++++++++++++++++++++:.................."
-echo "..........,=++++++++++++++++++++++++~..................."
-echo "............+++++++++++++++++++++++==..................."
-echo "............,++++++++++++++++++++++~...................."
-echo "...............:+~~+++++++++==+=,,......................"
-echo "....................++=~+:.............................."
-echo "Pink Freud: Um estudante do jogo Counter-Strike: Global Offensive"
+echo 'bind "l"						"                                                          Eidi noob"'
+echo 'bind "capslock"				"+voicerecord"'
+echo 'bind "mouse4"		    		"+voicerecord"'
+echo 'bind "SPACE"        			"+jump"'
+echo 'bind "MWHEELDOWN"   			"+jump"'
+echo 'bind "f"            			"use weapon_flashbang"'
+echo 'bind "4"            			"use weapon_hegrenade"'
+echo 'bind "z"            			"use weapon_incgrenade; use weapon_molotov"'
+echo 'bind "x"            			"use weapon_decoy"'
+echo 'bind "c"            			"use weapon_smokegrenade"'
+echo 'bind "h"            			"radio1"'
+echo 'bind "j"            			"radio2"'
+echo 'bind "k"            			"radio3"'
+echo 'bind ","            			"autobuy"'
+echo 'bind "."            			"rebuy"'
 echo ""
 echo ""
-echo "Suas binds de compra do teclado numerico sao:"
-echo "" //alterar estas binds utilizando o f1 ate o f12 se seu teclado nao tem numpad
+echo "binds de compra do teclado numerico sao:"
 echo "+=====================================================+"
 echo "|     NUM     |      /      |      *      |     -     |"
 echo "|     PAD     |    decoy    |DEFUSE       |           |"
@@ -178,10 +104,10 @@ echo "|-------------|-------------|-------------|  colete   |"
 echo "|             0             |       .     |     +     |"
 echo "|         KEV+HELMET        |      p250   |  helmet   |"
 echo "+=====================================================+"
-	
-bind "KP_SLASH"     "buy decoy"
-bind "KP_DEL"       "buy defuser"
-
+echo ""
+echo ""	
+bind "KP_SLASH"     	"buy decoy"
+bind "KP_DEL"       	"buy defuser"
 bind "KP_END"       	"buy famas;buy galil"
 bind "KP_DOWNARROW" 	"buy m4a1;buy ak47"
 bind "KP_PGDN"      	"buy flashbang"
@@ -190,15 +116,9 @@ bind "KP_5"         	"buy smokegrenade"
 bind "KP_RIGHTARROW"  	"buy incgrenade;buy molotov"
 bind "KP_INSERT"        "buy vest; buy vesthelm"  
 bind "KP_MULTIPLY"      "buy defuser"
-bind "KP_HOME"		"buy tec9;buy fiveseven" 
-bind "KP_DEL"		"buy p250"
-bind "KP_INS"		"buy defuser"
-//bind "KP_MINUS"     	"buy fn57"
-//bind "KP_PLUS"      	"buy vest"
-//bind "KP_ENTER"     	"buy vesthelm"
-
-
-
+bind "KP_HOME"		    "buy tec9;buy fiveseven" 
+bind "KP_DEL"		    "buy p250"
+bind "KP_INS"		    "buy defuser"
 bind "KP_RIGHTARROW" "buy p250"
 
 //configuracoes da sua mira CROSSHAIR:
@@ -213,7 +133,7 @@ cl_crosshairalpha "999"         			 	// como se fosse a intensidade da cor... o 
 cl_crosshairsize "3"           				 	// o tamanho das linhas que foram sua mira
 cl_crosshairthickness "0.8"    				 	// grossura das linhas da mira
 cl_crosshairusealpha "1"        			 	// 1 para ativar alguns efeitos como borda ou intensidade da cor
-cl_crosshairgap -2              			 	// espaco no centro da mira
+cl_crosshairgap -3              			 	// espaco no centro da mira
 cl_crosshairstyle 4             			 	// 4 para mira completamente estatica, 3 para que mostre o recoil, 5 quase estatica, 1 e e a mira nova do jogo, 2 e a dinamica refeita
 cl_crosshair_drawoutline 0      			 	// desenha uma borda preta com 1, 0 para nao.
 cl_crosshair_outlinethickness 2 			 	// grossura da borda preta da crosshair.
