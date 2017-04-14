@@ -40,7 +40,7 @@ hud_showtargetid 					"1"				// mostra o nome do seu inimigo quando vc coloca a 
 cl_show_clan_in_death_notice 		"0"				// nao mostra tag de clan no feed de frags
 cl_loadout_colorweaponnames 		"0"				// quando esta em zero eu nao vejo as armas raras com letras coloridas que distraem
 fps_max_menu 						"101"			// maximo fps no menu do jogo, nao no jogo
-fps_max        						"129"   		// maximo fps no jogo. quem tem PC muito bom pode colocar este valor em 129
+fps_max        						"200"   		// maximo fps no jogo. quem tem PC muito bom pode colocar este valor em 129
 rate 								"128000"		// nao altere este valor. configuracao da rede.
 cl_cmdrate 							"128"			// nao altere este valor. configuracao da rede.
 cl_updaterate 						"128"			// nao altere este valor. configuracao da rede.
@@ -70,6 +70,9 @@ bind "z"            				"use weapon_incgrenade; use weapon_molotov"
 bind "x"            				"use weapon_decoy"
 bind "c"            				"use weapon_smokegrenade"
 bind "4"            				"use weapon_hegrenade"
+bind "h"							"+spray_menu"
+bind "k"                            "kill"  
+bind "n"							"noclip"
 
 echo ""
 echo ""
@@ -116,7 +119,7 @@ cl_crosshairalpha "999"         			 	// como se fosse a intensidade da cor... o 
 cl_crosshairsize "3"           				 	// o tamanho das linhas que foram sua mira
 cl_crosshairthickness "0.8"    				 	// grossura das linhas da mira
 cl_crosshairusealpha "1"        			 	// 1 para ativar alguns efeitos como borda ou intensidade da cor
-cl_crosshairgap -1              			 	// espaco no centro da mira
+cl_crosshairgap -3              			 	// espaco no centro da mira
 cl_crosshairstyle 4             			 	// 4 para mira completamente estatica, 3 para que mostre o recoil, 5 quase estatica, 1 e e a mira nova do jogo, 2 e a dinamica refeita
 cl_crosshair_drawoutline 0      			 	// desenha uma borda preta com 1, 0 para nao.
 cl_crosshair_outlinethickness 2 			 	// grossura da borda preta da crosshair.
@@ -137,7 +140,7 @@ cl_disablehtmlmotd 				"1"  			// sem ads quando conectando nos servers.
 
 host_writeconfig
 
-sensitivity         			"1.8" 	 		// -> pra mim isso da cerca de 21cm para um giro de 360 graus @450DPI
+sensitivity         			"1.5" 	 		// -> pra mim isso da cerca de 21cm para um giro de 360 graus @450DPI
 zoom_sensitivity_ratio_mouse 	"0.8"	  		// razao com a sens normal do mouse
 viewmodel_presetpos 			"3"				// classic viewmodel
 r_drawtracers_firstperson 		"0" 			// nao mostra os rastro das suas balas. mostra o dos inimigos.
