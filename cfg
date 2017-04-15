@@ -52,8 +52,7 @@ clear								//	apaga no console o texto que estava la. apenas para melhorar a a
 ///////////////////////////////////// BINDS /////////////////////////////////////
 bind "capslock"						"+voicerecord" //usa o caps lock para falar no jogo.
 bind "g"							"drop"
-alias +jumpthrow "+jump; -attack"
-alias -jumpthrow "-jump"
+alias "+jumpthrow" "+jump;+attack" alias "-jumpthrow" "-jump;-attack" 
 bind "t" 							"+jumpthrow"
 bind "k"            				"radio1"
 bind "j"            				"radio2"
