@@ -39,7 +39,7 @@ cl_downloadfilter 					"nosounds"    	// ao entrar em servidores baixa o mapa ma
 hud_showtargetid 					"1"				// mostra o nome do seu inimigo quando vc coloca a mira nele
 cl_show_clan_in_death_notice 		"0"				// nao mostra tag de clan no feed de frags
 cl_loadout_colorweaponnames 		"0"				// quando esta em zero eu nao vejo as armas raras com letras coloridas que distraem
-fps_max_menu 						"101"			// maximo fps no menu do jogo, nao no jogo
+fps_max_menu 						"100"			// maximo fps no menu do jogo, nao no jogo
 fps_max        						"200"   		// maximo fps no jogo. quem tem PC muito bom pode colocar este valor em 129
 rate 								"128000"		// nao altere este valor. configuracao da rede.
 cl_cmdrate 							"128"			// nao altere este valor. configuracao da rede.
@@ -98,7 +98,7 @@ bind "KP_UPARROW"                              "buy hegrenade"
 bind "KP_DOWNARROW"                            "buy m4a4;buy ak47"
 bind "KP_LEFTARROW"                            "buy flashbang"
 bind "KP_RIGHTARROW"                           "buy molotov"
-bind "KP_HOME"                                 "buy tec9;buy p250"
+bind "KP_HOME"                                 "buy tec9;buy fn57"
 bind "KP_END"       	                       "buy ump45"
 bind "KP_PGUP"                                 "buy decoy"
 bind "KP_PGDN"      	                       "buy awp"
@@ -139,7 +139,7 @@ cl_disablehtmlmotd 				"1"  			// sem ads quando conectando nos servers.
 
 host_writeconfig
 
-sensitivity         			"1.5" 	 		// -> pra mim isso da cerca de 21cm para um giro de 360 graus @450DPI
-zoom_sensitivity_ratio_mouse 	"0.8"	  		// razao com a sens normal do mouse
-viewmodel_presetpos 			"3"				// classic viewmodel
+sensitivity         			"1"
+zoom_sensitivity_ratio_mouse 	"0.8"
+viewmodel_presetpos 			"3"
 r_drawtracers_firstperson 		"0" 			// nao mostra os rastro das suas balas. mostra o dos inimigos.
