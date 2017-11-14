@@ -136,7 +136,7 @@ cl_disablehtmlmotd 				"1"  			// sem ads quando conectando nos servers.
 
 host_writeconfig
 
-sensitivity         			"0.7"           // 1800 dpi
+sensitivity         			"0.4"           // 1800 dpi
 zoom_sensitivity_ratio_mouse 	"0.8"
 viewmodel_presetpos 			"3"
 r_drawtracers_firstperson 		"0" 			// nao mostra os rastro das suas balas. mostra o dos inimigos.
