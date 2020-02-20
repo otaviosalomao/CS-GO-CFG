@@ -111,12 +111,12 @@ bind "KP_ENTER"                                "buy vest;buy vesthelm"
 
 cl_crosshairalpha "232"
 cl_crosshaircolor "5"
-cl_crosshaircolor_b "255"
+cl_crosshaircolor_b "50"
 cl_crosshaircolor_r "50"
-cl_crosshaircolor_g "255"
+cl_crosshaircolor_g "250"
 cl_crosshairdot "0"
 cl_crosshairgap "-2"
-cl_crosshairsize "3"
+cl_crosshairsize "2"
 cl_crosshairstyle "4"
 cl_crosshairusealpha "1"
 cl_crosshairthickness "1"
@@ -136,7 +136,7 @@ cl_disablehtmlmotd 				"1"  			// sem ads quando conectando nos servers.
 
 host_writeconfig
 
-sensitivity         			"0.4"           // 1800 dpi
+sensitivity         			"0.5"           // 1800 dpi
 zoom_sensitivity_ratio_mouse 	"0.8"
 viewmodel_presetpos 			"3"
 r_drawtracers_firstperson 		"0" 			// nao mostra os rastro das suas balas. mostra o dos inimigos.
