@@ -1,141 +1,169 @@
-echo "executando cfg..."
-/////////////////////////////////////////////////////Configurações do jogo ////////////////////////////////////////////////////////////
-cl_forcepreload 					"1"           	//melhora a estabilidade forcando o jogo a carregar tudo na memoria durant eo loading, mas aumenta o tempo de loading. forca o jogo a carregar varias coisas na memoria, audio e talvez texturas. antes do jogo comecar
-m_rawinput 							"1"				// faz com  que para o jogo a sensibilidade do windows estivesse em 6/11
-voice_enable						"1"  			// 1 ativa voz no jogo. 0 desativa
-voice_scale         				"0.3" 			// entre 0 e 1. e o volume do microfone dos outros jogadores
-snd_musicvolume 					"0" 			// 0 desativa volume da musica do jogo. 1 ativa. mesmo ativado, deixo isso ligado para seletivamente ligar os sons abaixo:
-snd_menumusic_volume 				"0"				// desligado
-snd_roundstart_volume 				"0"				// desligado
-snd_roundend_volume 				"0"				// desligado
-snd_mapobjective_volume 			"0"				// desligado
-snd_tensecondwarning_volume 		"0.07" 			// LIGADO baixinho apenas para usar o volume de 10 segundos para fim do round/c4 explodir! 0.5 e volume pela metade. 1 volume max
-snd_deathcamera_volume 				"0"				// desligado
-windows_speaker_config 				"-1" 			// -1=Automatico 1=Headset 4=Stere 3=4Speakers 6=5.1 Surround
-snd_mute_losefocus 					"0"				// o jogo nao fica mutado quando esta minimizado (alt tab)
-cl_showpos 							"0"				// se estiver 1 mostra dados no canto superior esquerdo da tela, como a velocidade do boneco.
-net_graph 							"1" 			// 1 para ativar. 0 desativar. mostra informacoes sobre a conexao e fps
-net_graphpos	 					"1" 			// posiciona as infomacoes 1 a direita, 2 ao centro, 3 a esquerda
-net_graphproportionalfont 			"1" 			// 0 dependendo da resolucao, faz as letras menores, distraindo menos. eu acho pequeno demais, dificulta ler rapidamente o ping
-cl_radar_scale      				"0.45" 			// escala do radar. cada vez mais proximo de 0 menor, mais proximo de 1, maior.
-cl_radar_icon_scale_min 			"1" 			// tamanho de como os jogadores aparecem no radar. 0.4 o mais pequeno, padrao 0.6, 1 o maior possivel
-cl_radar_always_centered  			"0"				// o radar nem sempre vai estar centrado. eu prefiro assim porque da mais visao sobre o mapa completo.
-hud_scaling 						"0.8" 			// tamanho das coisas como texto da sua vida, na tela. padrao eh 1, diminuo para poluir menos a tela
-safezonex							"0.2"			// centraliza a HUD no eixo X. O mais central possivel, assim nao viajo muito com os olhos para ver o radar.
-safezoney							"0.85"			// centraliza no eixo Y
-cl_showloadout 						"1" 			// mostra sempre o inventario, como por exemplo qtas granadas. 0 desaparece depois de um tempo
-cl_righthand 						"0" 			// 1 para arma na direita, 0 para arma na esquerda
-cl_hud_playercount_showcount		"1"				// 0 = mostra os avatares de quem esta vivo, 1 = mostra apenas quantos estao vivos.
-cl_hud_playercount_pos				"1"				// posicao do relogio e mostrador de quem esta vivo: 0 em cima, 1 em baixo
-cl_hud_bomb_under_radar				"0" 			// posicao do indicador de C4: 1 = abaixo do radar (padrao), 0 no inventario, canto inferior direito.
-cl_autowepswitch 					"0" 			// pra nao equipar automaticamente quando catar uma arma do chao.
-cl_autohelp 						"1" 			// pra ver , por exemplo, se glock ou famas esta em burst ou auto.
-cl_showhelp 						"0" 			// desativa mensagens que apenas distraem
-cl_teammate_colors_show 			"1"				// mostro cores dos amigos no radar.
-cl_color 							"1"				// eu prefiro a cor roxa ->  0 = yellow, 1 = purple, 2 = green, 3 = blue, 4 = orange.
-cl_use_opens_buy_menu 				"0"				// o comando use (letra e) nao vai poder ser usado pra abrir o menu de compras.
-gameinstructor_enable 				"0" 			// desativa setas apontando pra bomba caida no chao, por exemplo, que distraem o jogador
-cl_downloadfilter 					"nosounds"    	// ao entrar em servidores baixa o mapa mas nao baixa som como o quake sounds
-hud_showtargetid 					"1"				// mostra o nome do seu inimigo quando vc coloca a mira nele
-cl_show_clan_in_death_notice 		"0"				// nao mostra tag de clan no feed de frags
-cl_loadout_colorweaponnames 		"0"				// quando esta em zero eu nao vejo as armas raras com letras coloridas que distraem
-fps_max_menu 						"100"			// maximo fps no menu do jogo, nao no jogo
-fps_max        						"200"   		// maximo fps no jogo. quem tem PC muito bom pode colocar este valor em 129
-rate 								"128000"		// nao altere este valor. configuracao da rede.
-cl_cmdrate 							"128"			// nao altere este valor. configuracao da rede.
-cl_updaterate 						"128"			// nao altere este valor. configuracao da rede.
-cl_interp 							"0"				// quanto menos interpolacao, mais o jogo no seu cliente se parece com o servidor. pode causar gente lagada a ficar "teleportando" deixo em 0 para que o servidor que determine esse valor pra mim
+//CSGO
 
-clear								//	apaga no console o texto que estava la. apenas para melhorar a apresentacao do texto abaixo
-clear								//	apaga no console o texto que estava la. apenas para melhorar a apresentacao do texto abaixo
+//Guns & Grenades
+bind "F" 							"slot7"			//FLASHBANG
+bind "Q" 							"slot10" 		//MOLOTOV
+bind "MOUSE3" 						"slot8" 		//SMOKE
+bind "MWHEELUP" 					"slot1"
+bind "MWHEELDOWN" 					"slot3"
+bind "0" 							"slot10"
+bind "1" 							"slot1"
+bind "2" 							"slot2"
+bind "3" 							"slot3"
+bind "4" 							"slot4"
+bind "5" 							"slot5"
+bind "6" 							"slot12"
+bind "7" 							"slot7"
+bind "8" 							"slot8"
+bind "9" 							"slot9"
 
-///////////////////////////////////// BINDS /////////////////////////////////////
-bind "capslock"						"+voicerecord" //usa o caps lock para falar no jogo.
-bind "g"							"drop"
-alias +jumpthrow "+jump; -attack"
-alias -jumpthrow "-jump"
-bind t +jumpthrow
-bind "k"            				"radio1"
-bind "j"            				"radio2"
-bind "h"            				"radio3"
-bind "b"            				"buymenu"
-bind ","            				"autobuy"
-bind "."            				"rebuy"
-bind "mouse1" 						"+attack"
-bind "mouse2" 						"+attack2"
+//Movement
+bind "MOUSE1" 						"+attack"
+bind "MOUSE2" 						"+jump"
+bind "MOUSE5" 						"+attack2"
+bind "SPACE" 						"+duck"
+bind "v" 							"+jump;-attack;-jump"
+bind "r" 							"+reload"
+bind "w" 							"+forward"
+bind "s" 							"+back"
+bind "d" 							"+moveright"
+bind "a" 							"+moveleft"
+bind "shift"						"+speed"
 
-/////////////////////////////////////GRANADAS/////////////////////////////////////
-bind "f"            				"use weapon_flashbang"
-bind "z"            				"use weapon_incgrenade; use weapon_molotov"
-bind "x"            				"use weapon_decoy"
-bind "c"            				"use weapon_smokegrenade"
-bind "4"            				"use weapon_hegrenade"
-bind "h"							"+spray_menu"
-bind "k"                            "kill"  
-bind "n"							"noclip"
+//Comms
+bind "u" 							"messagemode2"
+bind "y" 							"messagemode"
+bind "c" 							"radio3"
+bind "x" 							"radio2"
+bind "z" 							"radio1"
+bind "n"							"player_ping"
 
-echo ""
-echo ""
-echo "binds de compra do teclado numerico sao:"
+//Game Play
+bind "E" 							"+use"
+bind "CTRL" 						"lastinv"
+bind "MOUSE4" 						"+voicerecord"
+bind "TAB" 							"+showscores"
+bind "CAPSLOCK" 					"+lookatweapon"
+bind "T"							"+spray_menu"
+
+
+// Crosshair
+crosshair 							"1" 			//Enables crosshair
+cl_crosshairstyle 					"4" 			//Enter this first to customize a crosshair that is static.
+cl_crosshairusealpha 				"1" 			//Allows the crosshair to be solid
+cl_crosshairalpha 					"255" 			//Keeps the color solid, not see through
+cl_crosshaircolor 					"1" 			//Allows custom colors.
+cl_crosshaircolor_b 				"255" 			//Blue
+cl_crosshaircolor_g 				"255"		 	//Green
+cl_crosshaircolor_r 				"255" 			//Red
+cl_crosshairdot						"0" 			//Dot in the center off, +1 if you want it on
+cl_crosshairgap 					"-2" 			//Gap in the middle of the cross
+cl_crosshairsize 					"3" 			//Size of the cross
+cl_crosshairthickness 				"0.6" 			//Thickness of the cross
+cl_crosshair_drawoutline			"1" 			//Increases visibility on white crosshairs
+cl_crosshair_outlinethickness 		"1" 			//Thickness of the outline
+
+//Buy Binds
+bind "kp_uparrow" 					"buy ump45;"
+bind "kp_ins" 						"buy vesthelm;"
+bind "kp_enter" 					"buy vest;"
+bind "kp_5" 						"buy smokegrenade;"
+bind "kp_end" 						"buy galilar; buy famas;"
+bind "kp_downarrow" 				"buy ak47; buy m4a1;"
+bind "kp_pgdn" 						"buy flashbang;"
+bind "kp_leftarrow" 				"buy hegrenade;"
+bind "kp_rightarrow" 				"buy molotov; buy incgrenade;"
+bind "kp_del" 						"buy p250;"
+bind "kp_home" 						"buy tec9; buy fiveseven;"
+bind "kp_pgup" 						"buy awp;"
+bind "kp_multiply" 					"buy defuser"
+bind "kp_slash" 					"buy mac10; buy mp9"
+bind "kp_minus"						"buy deagle;"
+
+
 echo "+=====================================================+"
 echo "|     NUM     |      /      |      *      |     -     |"
-echo "|     PAD     |             |             |           |"
+echo "|     PAD     | MAC-10/MP9  |    DEFUSE   |   DEAGLE  |"
 echo "|-------------|-------------|-------------|-----------|"
 echo "|      7      |      8      |      9      |     +     |"
-echo "| TEC-9/p250  |     HE      |    DECOY    |           |"
-echo "|-------------|-------------|-------------|  colete   |"
+echo "|  TEC-9/5-7  |   UMP-45    |     AWP     |           |"
+echo "|-------------|-------------|-------------|           |"
 echo "|      4      |      5      |      6      |           |"
-echo "|    FLASH    |    SMOKE    |   MOLOTOV   |           |"
+echo "|     HE      |    SMOKE    |   MOLOTOV   |           |"
 echo "|-------------|-------------|-------------|-----------|"
 echo "|      1      |      2      |      3      |   ENTER   |"
-echo "|     UMP     |   AK/COLT   |     AWP     |           |"
-echo "|-------------|-------------|-------------|  colete   |"
-echo "|             0             |      .      |     +     |"
-echo "|         KEV+HELMET        |    DEFUSE   |  helmet   |"
+echo "| FAMAS/GALIL |   AK/COLT   |    FLASH    |           |"
+echo "|-------------|-------------|-------------|   KVLAR   |"
+echo "|             0             |      .      |           |"
+echo "|         KEV+HELMET        |    p250     |           |"
 echo "+=====================================================+"
-echo ""
-echo ""
-bind "KP_UPARROW"                              "buy hegrenade"
-bind "KP_DOWNARROW"                            "buy m4a4;buy ak47"
-bind "KP_LEFTARROW"                            "buy flashbang"
-bind "KP_RIGHTARROW"                           "buy molotov"
-bind "KP_HOME"                                 "buy tec9;buy fn57"
-bind "KP_END"       	                       "buy ump45"
-bind "KP_PGUP"                                 "buy decoy"
-bind "KP_PGDN"      	                       "buy awp"
-bind "KP_DEL"                                  "buy defuser"
-bind "KP_5"         	                       "buy smokegrenade"
-bind "KP_ENTER"                                "buy vest;buy vesthelm"
-
-//CROSSHAIR:
-cl_crosshairalpha "232"
-cl_crosshaircolor "5"
-cl_crosshaircolor_b "10"
-cl_crosshaircolor_r "178"
-cl_crosshaircolor_g "10"
-cl_crosshairdot "0"
-cl_crosshairgap "-2"
-cl_crosshairsize "4"
-cl_crosshairstyle "4"
-cl_crosshairusealpha "1"
-cl_crosshairthickness "1"
-cl_fixedcrosshairgap "-2"
-cl_crosshair_outlinethickness "0"
-cl_crosshair_drawoutline "0"
-
-// som:
-snd_headphone_pan_exponent  	"2"   			// makes the sound dropoff more gradual, less chance of you not noticing the sound of someone planting or a lone footstep deep down on banana
-snd_front_headphone_position	"45"   			// things infront of you actually sound like they're infront of you
-snd_rear_headphone_position 	"135" 			// things behind you actually sound like they're behind you
-
-// comandos que estou testando:
-mat_queue_mode 					"2" 			// relacionado a multi threading - aparentemente ajudam com o fps
-cl_disablehtmlmotd 				"1"  			// sem ads quando conectando nos servers.
 
 
-host_writeconfig
+//Mouse 
+m_rawinput 							"1"
+m_mouseaccel1 						"0"
+m_mouseaccel2 						"0"
+m_mousespeed 						"0"
+zoom_sensitivity_ratio_mouse		"0.9"
+sensitivity 						"0.9"
 
-sensitivity         			"0.5"           // 1800 dpi
-zoom_sensitivity_ratio_mouse 	"0.8"
-viewmodel_presetpos 			"3"
-r_drawtracers_firstperson 		"0" 			// nao mostra os rastro das suas balas. mostra o dos inimigos.
+
+// Net Graph
+net_graph 							"1"
+net_graphpos 						"1"
+net_graphheight 					"0"
+net_graphproportionalfont 			"1"
+
+
+//Radar
+cl_radar_always_centered 			"0"
+cl_radar_icon_scale_min				"0.4"
+cl_radar_rotate						"1"
+cl_radar_scale 						"0.5"
+hud_scaling 						"0.88"
+
+
+//Rates and Interpolation
+rate 								"786432"
+cl_cmdrate 							"128"
+cl_updaterate 						"128"
+cl_interp 							"0"
+cl_interp_ratio 					"1"
+
+//Viewmodel
+cl_righthand 						"0"
+cl_color							"1"
+cl_showhelp 						"0" 
+cl_autowepswitch 					"0"
+cl_bobamt_vert 						"0"
+cl_bobamt_lat 						"0"
+viewmodel_recoil 					"0"
+cl_bob_lower_amt 					"5"
+
+//Sounds
+snd_deathcamera_volume 				"0"
+snd_mapobjective_volume				"0"
+snd_menumusic_volume 				"0"
+snd_roundstart_volume 				"0"
+snd_roundend_volume 				"0"
+snd_mvp_volume 						"0.1"
+snd_tensecondwarning_volume 		"0.1"
+volume								"0.4"
+voice_scale							"0.12"
+voice_enable						"1"
+snd_mute_losefocus 					"0"
+voice_mixer_volume 					"1"
+
+
+cl_autobuy vesthelm vest m4a1 ak47
++cl_show_team_equipment
+gameinstructor_enable 				"0"
+r_drawtracers_firstperson 			"1"
+r_dynamic 							"1"
+
+mat_monitorgamma 					"2"
+fps_max 							"400"
+fps_max_menu 						"400"
+
+
+//-console -novid -freq 144 -tickrate 128 -noaafonts -nod3d9ex1 +mat_queue_mode 2 -cl_forcepreload 1 -high +exec duke.cfg
