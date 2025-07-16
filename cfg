@@ -1,5 +1,5 @@
 // ===================
-// CS2 Config - DUKE
+// CS2 Config Gaios
 // ===================
 
 // ===================
@@ -22,19 +22,19 @@ bind "8"           "slot8"
 bind "9"           "slot9"
 
 // ===================
-// Movement
+// Movement (padrão)
 // ===================
-bind "MOUSE1"      "+attack"
-bind "MOUSE2"      "+jump"
-bind "MOUSE5"      "+attack2"
-bind "SPACE"       "+duck"
-bind "r"           "+reload"
 bind "w"           "+forward"
 bind "s"           "+back"
-bind "d"           "+right"
-bind "a"           "+left"
-bind "shift"       "+sprint"
-bind "alt"         "+radialradio3"
+bind "a"           "+moveleft"
+bind "d"           "+moveright"
+bind "SPACE"       "+jump"
+bind "CTRL"        "+duck"
+bind "SHIFT"       "+sprint"
+bind "ALT"         "+walk"
+bind "MOUSE1"      "+attack"
+bind "MOUSE2"      "+attack2"
+bind "r"           "+reload"
 
 // ===================
 // Communications
@@ -47,30 +47,34 @@ bind "z"           "radio1"
 bind "n"           "player_ping"
 
 // ===================
-// Game Play
+// Game Play (padrão)
 // ===================
-bind "E"           "+use"
-bind "CTRL"        "lastinv"
+bind "e"           "+use"
+bind "q"           "lastinv"
 bind "MOUSE4"      "+voicerecord"
 bind "TAB"         "+showscores"
-bind "CAPSLOCK"    "+lookatweapon"
-bind "T"           "+spray_menu"
+bind "CAPSLOCK"    "+spray_menu"
 bind "`"           "toggleconsole"
+bind "t"           "+lookatweapon"
 
 // ===================
 // Crosshair
 // ===================
-crosshair                        "1"     // Enables crosshair
-cl_crosshairstyle                "4"     // Static style
-cl_crosshairusealpha             "1"     // Allows solid color
-cl_crosshairalpha                "255"   // Full opacity
-cl_crosshaircolor                "1"     // Custom color
-cl_crosshairdot                 "0"      // Dot off
-cl_crosshairgap                 "-2"
-cl_crosshairsize                 "3"
-cl_crosshairthickness            "0.6"
-cl_crosshair_drawoutline         "1"
-cl_crosshair_outlinethickness    "1"
+crosshair                        "1"
+cl_crosshairalpha "200"
+cl_crosshaircolor "5"
+cl_crosshaircolor_b "0"
+cl_crosshaircolor_r "255"
+cl_crosshaircolor_g "0"
+cl_crosshairdot "0"
+cl_crosshairgap "0"
+cl_crosshairsize "5"
+cl_crosshairstyle "4"
+cl_crosshairusealpha "1"
+cl_crosshairthickness "1"
+cl_fixedcrosshairgap "0"
+cl_crosshair_outlinethickness "0"
+cl_crosshair_drawoutline "0"
 
 // ===================
 // Buy Binds (Keypad)
@@ -132,19 +136,18 @@ rate                       "786432"
 // ===================
 // Viewmodel
 // ===================
-cl_preferlefthand           "1"
-cl_color                    "1"
+cl_righthand               "1"
 
 // ===================
 // Sound
 // ===================
-snd_deathcamera_volume         "0"
-snd_mapobjective_volume        "0"
-snd_menumusic_volume           "0"
-snd_roundstart_volume          "0"
-snd_roundend_volume            "0"
-snd_mvp_volume                 "0.1"
-snd_tensecondwarning_volume    "0.05"
+snd_deathcamera_volume        "0"
+snd_mapobjective_volume       "0"
+snd_menumusic_volume          "0"
+snd_roundstart_volume         "0"
+snd_roundend_volume           "0"
+snd_mvp_volume                "0.1"
+snd_tensecondwarning_volume   "0.05"
 volume                        "0.32"
 bind "p"                      "incrementvar volume 0 1 0.1"
 bind "o"                      "incrementvar volume 0 1 -0.1"
@@ -152,13 +155,10 @@ snd_voipvolume                "0.2"
 snd_mute_losefocus            "0"
 
 // ===================
-// Miscelânea
+// Misc
 // ===================
-cl_autobuy vesthelm vest m4a1 ak47
-+cl_show_team_equipment
+cl_show_team_equipment        "1"
 gameinstructor_enable         "0"
-r_drawtracers_firstperson     "1"
 fps_max                       "400"
-
-// Launch options (para lembrar, não é lido dentro do .cfg)
-// -console -novid -freq 144 -tickrate 128 -noaafonts -nod3d9ex1 +mat_queue_mode 2 -cl_forcepreload 1 -high +exec duke.cfg
+cl_showfps                    "1"
+host_writeconfig
